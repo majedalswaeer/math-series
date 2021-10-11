@@ -25,13 +25,19 @@ def lucas(n: int):
     else:
         return lucas(n-1)+lucas(n-2)
 
-def sum_series(x,*args):
-    return fibonacci(x)+lucas(x)
+def sum_series(n,x=0,y=1):
+    """
+    inputs for this function are three, one is required which is n and (x,y) which are optional
+    if a=1 and b=2, it will return the n(th) value of fibonacci
+    if a=2 and b=1, it will return the n(th) value of lucas
+    if other values for the optional parameters, it will produce other series
+
+    """
 
 
 
 
 if __name__=='__main__':
     n=int(input('enter a number > '))
-    print(fibonacci(n))
-    print(lucas(n))
+    print("fibonacci value >",fibonacci(n))
+    print("lucas value >",lucas(n))
