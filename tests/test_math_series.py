@@ -70,12 +70,12 @@ def test_ten():
     assert actual==expected     
 
 
-def test_one_sum_series():
+def test_onee_sum_series():
     expected = 1
     actual = sum_series(1,0,1)
     assert expected == actual
 
-def test_two_sum_series():
+def test_twoo_sum_series():
     expected = 3
     actual = sum_series(2,2,1)
     assert expected == actual
